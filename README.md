@@ -1,4 +1,4 @@
-# mvcl - mpv-video-cutter-linux
+# mpv-video-cutter-linux
 
 This is a fork of https://github.com/rushmj/mpv-video-cutter with patch to work with multiple cuts and flatpak support. And OSD message for enhancements. 
 
