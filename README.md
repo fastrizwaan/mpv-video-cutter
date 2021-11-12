@@ -1,6 +1,16 @@
 # mpv-video-cutter-linux
 
-This is a fork of https://github.com/rushmj/mpv-video-cutter with patch to work with multiple cuts and flatpak support. And OSD message for enhancements. 
+## This is a fork of https://github.com/rushmj/mpv-video-cutter
+
+## ### Features
+
+1. Patch to work with multiple video segments/cuts. (replace \n with ;) 
+
+2. OSD message for enhancements. 
+
+3. Flatpak support (with default directory to ~/Videos/mpv-video-cutter-linux/)
+
+
 
 Before using it,mpv and ffmpeg should be installed.support mac os x and linux,if you want it supports windows,you can write CMD instead of Bash Shell.  
 
@@ -17,10 +27,10 @@ this script uses the FFmpeg to finish the job,and is lossless cutting,the cut vi
 * **press e** : set the right trim in the end time of the video
 * **press z** : undo the cut
 
-
 also you can bind your own hot key to the event.
 I have defined some event you can bind it in the ~/.config/mpv/input.conf,for example:Ctrl+s script-binding set_fromStart
 here are them:
+
 * **cut_movie** : cut time point,default key 'c'
 * **log_time_queue** : print the queue that record the cut point,defalut key 'l'
 * **output_queue** : output video,default key 'o'
@@ -28,6 +38,5 @@ here are them:
 * **set_End** : set the right trim in the end time of the video,default key 'e'
 * **acu_output_queue** : accurate time cut 
 * **undo** : undo
-
 
 In fact,I should also add some more function like GUI editor?
