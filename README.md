@@ -2,15 +2,13 @@
 
 ## This is a fork of https://github.com/rushmj/mpv-video-cutter
 
-## ### Features
+## Features
 
 1. Patch to work with multiple video segments/cuts. (replace \n with ;) 
 
 2. OSD message for enhancements. 
 
 3. Flatpak support (with default directory to ~/Videos/mpv-video-cutter-linux/)
-
-
 
 Before using it,mpv and ffmpeg should be installed.support mac os x and linux,if you want it supports windows,you can write CMD instead of Bash Shell.  
 
