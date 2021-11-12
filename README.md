@@ -8,7 +8,7 @@
 
 2. OSD message for enhancements.  OSD displays messages!
 
-3. Flatpak support (with default directory to ~/Videos/mpv-video-cutter-linux/)
+3. Flatpak support (with default directory to ~/Videos/mpv-cut/)
 
 Before using it,mpv and ffmpeg should be installed.support mac os x and linux,if you want it supports windows,you can write CMD instead of Bash Shell.  
 
