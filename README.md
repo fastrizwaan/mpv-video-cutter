@@ -32,8 +32,6 @@ mkdir -p ~/.var/app/io.mpv.Mpv/config/mpv/scripts/
 cp mpv-video-cutter-linux/flatpak/* ~/.var/app/io.mpv.Mpv/config/mpv/scripts/
 ```
 
-```
-
 Before using it,mpv and ffmpeg should be installed.support mac os x and linux,if you want it supports windows,you can write CMD instead of Bash Shell.  
 
    it can cut video and concat automatically  
