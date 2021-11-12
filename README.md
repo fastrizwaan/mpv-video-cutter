@@ -1,6 +1,6 @@
 # mpv-video-cutter-linux
 
-## This is a fork of https://github.com/rushmj/mpv-video-cutter
+This is a fork of https://github.com/rushmj/mpv-video-cutter
 
 ## Features
 
