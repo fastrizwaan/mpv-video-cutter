@@ -14,13 +14,14 @@ This is a fork of https://github.com/rushmj/mpv-video-cutter
 
 ### For regular MPV users (distro based mpv)
 
-Simply copy the 2 files `cutter.lua` and `c_concat.sh` in `mpv-video-cutter-linux`directory to `~/.config/mpv/scripts/` directory 
+Copy the 2 files `cutter.lua` and `c_concat.sh` present in `mpv-video-cutter-linux`directory to `~/.config/mpv/scripts/` directory 
 
 ```
 cd /tmp
 git clone https://github.com/fastrizwaan/mpv-video-cutter-linux.git
 mkdir -p ~/.config/mpv/scripts
 cp mpv-video-cutter-linux/mpv-video-cutter-linux/* ~/.config/mpv/scripts
+chmod 0755 ~/.config/mpv/scripts/c_concat.sh
 ```
 
 ## For Flatpak Users of (io.mpv.Mpv) at flathub
@@ -30,6 +31,7 @@ cd /tmp
 git clone https://github.com/fastrizwaan/mpv-video-cutter-linux.git
 mkdir -p ~/.var/app/io.mpv.Mpv/config/mpv/scripts/
 cp mpv-video-cutter-linux/flatpak/* ~/.var/app/io.mpv.Mpv/config/mpv/scripts/
+chmod 0755 ~/.var/app/io.mpv.Mpv/config/mpv/scripts/c_concat.sh
 ```
 
 Before using it,mpv and ffmpeg should be installed.support mac os x and linux,if you want it supports windows,you can write CMD instead of Bash Shell.  
