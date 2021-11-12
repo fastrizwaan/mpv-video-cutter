@@ -4,11 +4,35 @@
 
 ## Features
 
-1. Patch to work with multiple video segments/cuts. (replace \n with ;) 
+1. Patch to work with multiple video segments/cuts. Thanks  [@gabin22](https://github.com/gabin22)
 
-2. OSD message for enhancements.  OSD displays messages!
+2. OSD message for enhancements.  OSD displays messages! Thanks [@rushmj](https://github.com/rushmj) 
 
-3. Flatpak support (with default directory to ~/Videos/mpv-cut/)
+3. Flatpak support (with default directory to ~/Videos/mpv-cut/)  thanks to yours truly :-)
+
+## How to Install
+
+### For regular MPV users (distro based mpv)
+
+Simply copy the 2 files `cutter.lua` and `c_concat.sh` in `mpv-video-cutter-linux`directory to `~/.config/mpv/scripts/` directory 
+
+```
+cd /tmp
+git clone https://github.com/fastrizwaan/mpv-video-cutter-linux.git
+mkdir -p ~/.config/mpv/scripts
+cp mpv-video-cutter-linux/mpv-video-cutter-linux/* ~/.config/mpv/scripts
+```
+
+## For Flatpak Users of (io.mpv.Mpv) at flathub
+
+```
+cd /tmp
+git clone https://github.com/fastrizwaan/mpv-video-cutter-linux.git
+mkdir -p ~/.var/app/io.mpv.Mpv/config/mpv/scripts/
+cp mpv-video-cutter-linux/flatpak/* ~/.var/app/io.mpv.Mpv/config/mpv/scripts/
+```
+
+```
 
 Before using it,mpv and ffmpeg should be installed.support mac os x and linux,if you want it supports windows,you can write CMD instead of Bash Shell.  
 
