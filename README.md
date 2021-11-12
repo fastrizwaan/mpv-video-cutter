@@ -6,7 +6,7 @@
 
 1. Patch to work with multiple video segments/cuts. (replace \n with ;) 
 
-2. OSD message for enhancements. 
+2. OSD message for enhancements.  OSD displays messages!
 
 3. Flatpak support (with default directory to ~/Videos/mpv-video-cutter-linux/)
 

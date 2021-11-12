@@ -35,10 +35,10 @@ function cut_movie()
 	table.insert(time_queue,time_current)
 	if (count%2 == 0)
 	then
-		print('[right trim is cut]:'..time_current)
+		mp.osd_message('[right trim is cut]:'..time_current)
         print("time pairs:" .. time_queue[count-1]..','..time_queue[count])
     else
-    	print('[left trim is cut]:'..time_current)
+    	mp.osd_message('[left trim is cut]:'..time_current)
     end
     --os.execute('date')--
 end
@@ -48,7 +48,7 @@ function log_time_queue()
 	local str = ''
 	if(count%2==1)
 	then
-		print('please confrim the right trim!')
+		mp.osd_message('please confrim the right trim!')
 	else
 		for k,v in ipairs(time_queue)
 		do
@@ -75,7 +75,7 @@ function output_queue()
 	local shell_str = ''
 	if(count%2==1)
 	then
-		print('please confrim the right trim!')
+		mp.osd_message('please confrim the right trim!')
 	else
 		for k,v in ipairs(time_queue)
 		do
@@ -90,7 +90,7 @@ function output_queue()
 		print('shell:'..c_concat_sh .. ' '..output_file..' "'..video_path..'" '..output_dir)
 		os.execute(c_concat_sh .. ' "'..output_file..'" "'..video_path..'" "'..output_dir..'" "'..run_dir..'"')
 		os.execute(run_sh)
-
+        mp.osd_message('Video is cut')
 	end
 end
 mp.add_key_binding("o", "output_queue", output_queue)
@@ -99,7 +99,7 @@ mp.add_key_binding("o", "output_queue", output_queue)
 function reset_cut()
 	count=0
 	time_queue={}
-	print('cutter reset')
+	mp.osd_message('cutter reset')
 end
 mp.add_key_binding("r", "reset_cut", reset_cut)
 
@@ -125,11 +125,11 @@ function set_End()--clean and set 0 to left trim
 	then
 		count=count+1
 		local full_time=mp.get_property_number('time-remaining')+mp.get_property_number('time-pos')
-		print('full_time:'..full_time)
+		mp.osd_message('full_time:'..full_time)
 		table.insert(time_queue,full_time)
 		
 	else
-		print('please confrim the left trim!')
+		mp.osd_message('please confrim the left trim!')
 
 	end
 
@@ -157,15 +157,15 @@ mp.add_key_binding("p", "get_path", get_path)
 function undo()--clean and set 0 to left trim
     if(count==0)
     then
-    	print("cat't undo!")
+    	mp.osd_message("cat't undo!")
     else
     	table.remove(time_queue)
 		count=count-1
 		if(count==0)
 		then
-			print('undo!time_queue is empty.')
+			mp.osd_message('undo!time_queue is empty.')
 		else
-			print('undo!last trim:'..time_queue[count])
+			mp.osd_message('undo!last trim:'..time_queue[count])
 		end
 		
 		
@@ -189,7 +189,7 @@ function acu_output_queue()--精确切割，时间慢
 	local shell_str = ''
 	if(count%2==1)
 	then
-		print('please confrim the right trim!')
+		mp.osd_message('please confrim the right trim!')
 	else
 		for k,v in ipairs(time_queue)
 		do
@@ -204,7 +204,7 @@ function acu_output_queue()--精确切割，时间慢
 		print('shell:'..c_concat_sh2 .. ' '..output_file..' "'..video_path..'" '..output_dir)
 		os.execute(c_concat_sh2 .. ' "'..output_file..'" "'..video_path..'" "'..output_dir..'" "'..run_dir..'"')
 		os.execute(run_sh)
-
+        mp.osd_message('Video is cut')
 	end
 end
 mp.add_key_binding("i", "acu_output_queue", acu_output_queue)
