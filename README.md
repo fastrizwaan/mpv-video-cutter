@@ -1,4 +1,7 @@
-# mpv-video-cutter   
+# mvcl - mpv-video-cutter-linux
+
+This is a fork of https://github.com/rushmj/mpv-video-cutter with patch to work with multiple cuts and flatpak support. And OSD message for enhancements. 
+
 Before using it,mpv and ffmpeg should be installed.support mac os x and linux,if you want it supports windows,you can write CMD instead of Bash Shell.  
 
    it can cut video and concat automatically  
