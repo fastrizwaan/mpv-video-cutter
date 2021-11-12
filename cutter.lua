@@ -79,7 +79,7 @@ function output_queue()
 	else
 		for k,v in ipairs(time_queue)
 		do
-			if (k%2==1) then str=str..v..',' else str=str..v..'\\n'  end
+			if (k%2==1) then str=str..v..',' else str=str..v..';'  end
 		end
 		str=string.sub(str,0,#str-2)
 		shell_str='echo'..' '..'"'..str..'"'..'>'..' '..output_file

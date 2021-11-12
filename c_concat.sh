@@ -36,7 +36,7 @@ echo "cd \"$dir_path\"" > run.sh
 echo "mkdir $dir_name" >> run.sh
 
 
-IFS=$'\n' a=(`eval cat $time_pairs_txt`)
+IFS=$';' a=(`eval cat $time_pairs_txt`)
 num=${#a[@]}
 for  i  in  ${!a[@]};do
 	IFS=',' seg=(${a[i]})
