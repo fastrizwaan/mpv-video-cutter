@@ -98,7 +98,7 @@ function output_queue()
 		print('shell:'..c_concat_sh .. ' '..output_file..' "'..video_path..'" '..output_dir)
 		os.execute(c_concat_sh .. ' "'..output_file..'" "'..video_path..'" "'..output_dir..'" "'..run_dir..'"')
 		os.execute(run_sh)
-        mp.osd_message('Video is cut',10)
+        mp.osd_message('Video is cut',5)
 	end
 end
 mp.add_key_binding("o", "output_queue", output_queue)
@@ -212,7 +212,7 @@ function acu_output_queue()--精确切割，时间慢
 		print('shell:'..c_concat_sh2 .. ' '..output_file..' "'..video_path..'" '..output_dir)
 		os.execute(c_concat_sh2 .. ' "'..output_file..'" "'..video_path..'" "'..output_dir..'" "'..run_dir..'"')
 		os.execute(run_sh)
-        mp.osd_message('Video is cut',10)
+        mp.osd_message('Video is cut',5)
 	end
 end
 mp.add_key_binding("i", "acu_output_queue", acu_output_queue)
