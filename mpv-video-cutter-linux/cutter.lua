@@ -110,6 +110,7 @@ function set_fromStart()--clean and set 0 to left trim
 	print('count:'..count)
 	local time_current=0
 	table.insert(time_queue,time_current)
+	mp.osd_message('Left trim: 00:00')
 
 end
 mp.add_key_binding("s", "set_fromStart", set_fromStart)
