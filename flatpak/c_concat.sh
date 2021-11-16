@@ -14,7 +14,7 @@ input=`printf %q "$input"`
 output='date "+%Y_%m_%d_%H_%M_%S"'
 #output=$(date "+%Y_%m_%d_%H_%M_%S")
 #today=$(date "+%Y_%m_%d_%H_%M_%S")
-destdir="~/Videos/mpv-cut"
+destdir="~/Videos/mpv"
 dir_name="$destdir/.cut_video"
 dir_path=$3
 sh_dir=$4
@@ -36,7 +36,7 @@ eval cd "$sh_dir"
 echo "path:$dir_path"
 echo "f:`pwd`"
 echo "cd \"$dir_path\"" > run.sh
-echo "mkdir $dir_name" >> run.sh
+echo "mkdir -p $dir_name" >> run.sh
 
 
 IFS=$';' a=(`eval cat $time_pairs_txt`)
