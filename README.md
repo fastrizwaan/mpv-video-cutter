@@ -1,6 +1,8 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/fastrizwaan)
+
 # mpv-video-cutter-linux
 
-This is a fork of https://github.com/rushmj/mpv-video-cutter
+lua script to extract single or multiple segments of video into a single file, this is fast without re-encoding.
 
 ## Features
 
